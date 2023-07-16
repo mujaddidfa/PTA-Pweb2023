@@ -56,7 +56,7 @@
         </aside>
     </main>
     <footer>
-        <p>UNIVERSITAS AHMAD DAHLAN</p>
+        <p>&copy; 2023 - Mujaddid Fathi Atho'illah. 2200018385 - Universitas Ahmad Dahlan</p>
     </footer>
 </body>
 </html>

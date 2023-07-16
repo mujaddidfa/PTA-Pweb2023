@@ -16,10 +16,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    font-weight: bold;
 }
 
 nav img {
-    height: 50px;
+    height: 40px;
 }
 
 nav ul {
@@ -57,6 +58,10 @@ main {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.home {
+    height: 500px;
 }
 
 article {
@@ -128,6 +133,7 @@ aside {
     padding: 1rem;
     width: 20%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-weight: bold;
 }
 
 aside ul {

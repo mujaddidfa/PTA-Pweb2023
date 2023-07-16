@@ -59,7 +59,7 @@
                     </tr>
                     <tr>
                         <td><label for="pesan">Pesan</label></td>
-                        <td>: <textarea name="pesan" id="pesan" cols="30" rows="10" required></textarea></td>
+                        <td>: <textarea name="pesan" id="pesan" cols="75" rows="5" required></textarea></td>
                     </tr>
                 </table>
                 <button type="submit" name="submit">Kirim</button>
@@ -73,7 +73,7 @@
         </aside>
     </main>
     <footer>
-        <p>UNIVERSITAS AHMAD DAHLAN</p>
+        <p>&copy; 2023 - Mujaddid Fathi Atho'illah. 2200018385 - Universitas Ahmad Dahlan</p>
     </footer>
 </body>
 </html>
