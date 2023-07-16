@@ -50,7 +50,7 @@ header .header {
 
 /* Main Styles */
 main {
-    background-color: #ffF;
+    background-color: #fff;
     color: #333;
     padding: 3rem;
     text-align: start;
@@ -105,6 +105,21 @@ table .photo {
 
 table img {
     height: 300px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+
+/* Feedback Styles */
+.form-feedback tr, .form-feedback td {
+    padding: 1rem;
 }
 
 /* Aside Styles */
