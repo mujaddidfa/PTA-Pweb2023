@@ -89,7 +89,7 @@
                     <tr>
                         <td><label for="prodi">PRODI</label></td>
                         <td>: 
-                            <select name="prodi" id="prodi">
+                            <select name="prodi" id="prodi" required>
                                 <option value="Ilmu Hadis">Ilmu Hadis</option>
                                 <option value="Bahasa dan Sastra Arab">Bahasa dan Sastra Arab</option>
                                 <option value="Perbankan Syariah">Perbankan Syariah</option>
@@ -136,8 +136,8 @@
                         <td>: <input type="email" name="email" id="email" required></td>
                     </tr>
                     <tr>
-                        <td><label for="HP">HP</label></td>
-                        <td>: <input type="tel" name="HP" id="HP" required pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"></td>
+                        <td><label for="hp">hp</label></td>
+                        <td>: <input type="tel" name="hp" id="hp" required pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"></td>
                     </tr>
                     <tr>
                         <td><label for="foto">FOTO</label></td>
@@ -150,8 +150,7 @@
         <aside>
             <ul>
                 <li><a href="add.php">TAMBAH DATA</a></li>
-                <li><a href="change.php">UBAH DATA</a></li>
-                <li><a href="delete.php">HAPUS DATA</a></li>
+                <li><a href="list.php">LIST BIODATA</a></li>
             </ul>
         </aside>
     </main>

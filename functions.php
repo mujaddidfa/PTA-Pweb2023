@@ -84,4 +84,33 @@
 
         return $namaFileBaru;
     }
+
+    function change($data){
+        global $conn;
+        $nama = htmlspecialchars($data["nama"]);
+        $nim = htmlspecialchars($data["nim"]);
+        $tempatlahir = htmlspecialchars($data["tempatlahir"]);
+        $tanggallahir = htmlspecialchars($data["tanggallahir"]);
+        $fakultas = htmlspecialchars($data["fakultas"]);
+        $prodi = htmlspecialchars($data["prodi"]);
+        $email = htmlspecialchars($data["email"]);
+        $hp = htmlspecialchars($data["hp"]);
+        $fotoLama = htmlspecialchars($data["fotoLama"]);
+
+        if($_FILES['foto']['error'] === 4){
+            $foto = $fotoLama;
+        }else{
+            $foto = upload();
+        }
+        $query = "UPDATE mahasiswa SET nama = '$nama', tempatlahir = '$tempatlahir', tanggallahir = '$tanggallahir', fakultas = '$fakultas', prodi = '$prodi', email = '$email', hp = '$hp', foto = '$foto' WHERE nim = '$nim'";
+        mysqli_query($conn, $query);
+
+        return mysqli_affected_rows($conn);
+    }
+
+    function delete($nim){
+        global $conn;
+        mysqli_query($conn, "DELETE FROM mahasiswa WHERE nim = '$nim'");
+        return mysqli_affected_rows($conn);
+    }
 ?>

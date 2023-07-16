@@ -64,7 +64,7 @@
                 </tr>
                 <tr>
                     <td>HP</td>
-                    <td>: <?= $row["nama"] ?></td>
+                    <td>: <?= $row["hp"] ?></td>
                 </tr>
             </table>
             <?php endforeach; ?>
@@ -72,8 +72,8 @@
         <aside>
             <ul>
                 <li><a href="add.php">TAMBAH DATA</a></li>
-                <li><a href="change.php">UBAH DATA</a></li>
-                <li><a href="delete.php">HAPUS DATA</a></li>
+                <li><a href="change.php?nim=<?= $row["nim"] ?>">UBAH DATA</a></li>
+                <li><a href="delete.php?nim=<?= $row["nim"] ?>">HAPUS DATA</a></li>
             </ul>
         </aside>
     </main>
