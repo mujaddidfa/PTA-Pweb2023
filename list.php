@@ -1,3 +1,9 @@
+<?php
+    require 'functions.php';
+    // dapatkan nama nama dan nim mahasiswa
+    $mahasiswa = nameQuery("SELECT nama, nim FROM mahasiswa");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +33,21 @@
     </header>
     <main>
         <article>
-            <h1>PROGRAM INPUT DATA MAHASISWA</h1>
-            <p>Program ini digunakan untuk menginput data mahasiswa di Universitas Ahmad Dahlan. Data yang diinputkan akan disimpan dalam database dan dapat diubah atau dihapus jika diperlukan.</p>
+            <h1>LIST BIODATA MAHASISWA</h1>
+            <table class="list">
+                <tr>
+                    <th>NO</th>
+                    <th>NAMA</th>
+                </tr>
+                <?php $i = 1; ?>
+                <?php foreach($mahasiswa as $row) : ?>
+                <tr>
+                    <td class="no"><?= $i ?></td>
+                    <td><a href="biodata.php?nim=<?= $row["nim"] ?>"><?= $row["nama"] ?></a></td>
+                </tr>
+                <?php $i++; ?>
+                <?php endforeach; ?>
+            </table>
         </article>
         <aside>
             <ul>

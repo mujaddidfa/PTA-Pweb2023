@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #313131;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+nav img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: start;
+}
+
+header .header {
+    background: linear-gradient(to right, #07108f, #285187, #07108f);
+    padding: 3rem;
+}
+
+/* Main Styles */
+main {
+    background-color: #fff;
+    color: #333;
+    padding: 3rem;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+article {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 75%;
+    height: 100vh;
+    padding: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+article h1 {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.list, .list th, .list tr, .list td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.list th, .list .no {
+    text-align: center;
+}
+
+.list .no {
+    width: 10%;
+}
+
+table .photo {
+    width: 25%;
+    padding-right: 50px;
+}
+
+table img {
+    height: 300px;
+}
+
+aside {
+    background-color: #aaa9a9;
+    padding: 1rem;
+    width: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+aside ul {
+    list-style: none;
+    padding: 1.5rem;
+}
+
+aside ul li {
+    padding: 0.5rem 0;
+}
+
+aside ul li a {
+    color: #000;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #07108f, #285187, #07108f);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
