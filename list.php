@@ -1,6 +1,5 @@
 <?php
     require 'functions.php';
-    // dapatkan nama nama dan nim mahasiswa
     $mahasiswa = nameQuery("SELECT nama, nim FROM mahasiswa");
 ?>
 

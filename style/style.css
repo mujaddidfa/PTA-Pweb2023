@@ -50,7 +50,7 @@ header .header {
 
 /* Main Styles */
 main {
-    background-color: #fff;
+    background-color: #ffF;
     color: #333;
     padding: 3rem;
     text-align: start;
@@ -63,7 +63,6 @@ article {
     background-color: #fff;
     border: 1px solid #ccc;
     width: 75%;
-    height: 100vh;
     padding: 3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -80,6 +79,8 @@ table {
     margin: 2rem 0;
 }
 
+
+/* List Styles */
 .list, .list th, .list tr, .list td {
     border: 1px solid #ccc;
     padding: 1rem;
@@ -91,6 +92,11 @@ table {
 
 .list .no {
     width: 10%;
+}
+
+/* Add Styles */
+.add-form tr, .add-form td {
+    padding: 1rem;
 }
 
 table .photo {
