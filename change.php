@@ -139,7 +139,7 @@
                         <td>: <input type="email" name="email" id="email" value="<?= $row["email"] ?>" required></td>
                     </tr>
                     <tr>
-                        <td><label for="hp">hp</label></td>
+                        <td><label for="hp">HP</label></td>
                         <td>: <input type="tel" name="hp" id="hp" value="<?= $row["hp"] ?>" required pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"></td>
                     </tr>
                     <tr>

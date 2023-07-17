@@ -3,15 +3,17 @@
     if(isset($_POST["submit"])) {
         $nama = $_POST["nama"];
         $email = $_POST["email"];
+        $hp = $_POST["hp"];
+        $subjek = $_POST["subjek"];
         $pesan = $_POST["pesan"];
 
-        $feedback = "Nama : $nama\nEmail : $email\nPesan : $pesan\n\n";
+        $feedback = "Nama : $nama\nEmail : $email\nHP : $hp\nSubjek : $subjek\nPesan : $pesan\n\n";
         $file = fopen("feedback.txt", "a");
         fwrite($file, $feedback);
         fclose($file);
 
         echo "<script>
-                alert('Terima kasih atas feedback anda!');
+                alert('Feedback telah terkirim!');
                 document.location.href = 'index.html';
             </script>";
     }
@@ -47,7 +49,7 @@
     <main>
         <article>
             <h1>FORM FEEDBACK</h1>
-            <form method="POST">
+            <form method="POST" autocomplete="off">
                 <table class="form-feedback">
                     <tr>
                         <td><label for="nama">Nama</label></td>
@@ -55,7 +57,15 @@
                     </tr>
                     <tr>
                         <td><label for="email">Email</label></td>
-                        <td>: <input type="email" name="email" id="email" required></td>
+                        <td>: <input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="hp">HP</label></td>
+                        <td>: <input type="tel" name="hp" id="hp" pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subjek">Subjek</label></td>
+                        <td>: <input type="text" name="subjek" id="subjek" required></td>
                     </tr>
                     <tr>
                         <td><label for="pesan">Pesan</label></td>
